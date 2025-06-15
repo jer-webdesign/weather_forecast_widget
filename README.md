@@ -32,16 +32,15 @@ Switch to dark mode for a sleek nighttime theme with constellation background.
 
 ## File Structure
 
-```
-weather-widget/
-├── index.html          # Main HTML structure
-├── script.js           # JavaScript functionality
-├── style.css          # CSS styling and themes
+weather_forecase_widget/  # Repository name
+├── index.html            # Main HTML structure
+├── script.js             # JavaScript functionality
+├── style.css             # CSS styling and themes
 ├── images/
 │   ├── blue-sky.jpg                           # Light mode background
 │   └── stars-constellation-universe-twin.jpg  # Dark mode background
 └── README.md          # Project documentation
-```
+
 
 ## Setup Instructions
 

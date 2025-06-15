@@ -1,0 +1,51 @@
+<!-- 
+This HTML creates a weather forecast widget that displays the current weather and a 7-day forecast with an 
+interactive and responsive layout.
+- It includes a light/dark mode toggle for better accessibility.
+- There is a selector section to choose between Mock Data and Live API.
+- Users can select a country and city using dropdown menus.
+- A temperature unit switch allows toggling between Celsius (°C) and Fahrenheit (°F).
+- The widget features two main weather display sections: one for today's current weather and another for the 7-day forecast.
+- It also uses Font Awesome icons loaded via a CDN (Content Delivery Network) for fast and reliable icon rendering.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Widget</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Weather Forecast</h1>
+      <button id="dark-mode-button">🌙</button>
+    </header>
+
+    <section class="selectors">
+      <select id="data-source-select">
+        <option value="mock">Mock Data</option>
+        <option value="api">Live API</option>
+      </select>
+      <select id="country-select"></select>
+      <select id="city-select"></select>
+      <button id="temperature-unit-button">°F</button>
+    </section>
+
+    <section id="current-weather" class="weather-card transparent-card">
+      <h2>Current Weather</h2>
+      <div class="weather-content" id="current-content"></div>
+    </section>
+
+    <section id="forecast" class="weather-card transparent-card">
+      <h2>7-Day Forecast</h2>
+      <div class="forecast-grid" id="forecast-grid"></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
